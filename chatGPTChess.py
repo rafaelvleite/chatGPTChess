@@ -37,4 +37,6 @@ board.push_san("e4")
 # Call the method and send do Clipboard
 pyperclip.copy(getChatGPTText(board))
 
+# It is important to note that for the first move, you need to write: "Let's play a chess game. I will make my first move"
+# Then you can use it normally
 
