@@ -2,6 +2,7 @@
 import chess
 import pyperclip
 
+# Method to pass the board and get moves played and legal moves to pass to chatGPT
 def getChatGPTText(board):
     ply = 0
     moveNumber = 1
@@ -25,12 +26,15 @@ def getChatGPTText(board):
     stringToPrint += "\nWhick move do you choose?"
     return stringToPrint
 
-
+# Starts a new game
 board = chess.Board()
+
 # board.pop() #if you need to undo a move
 
-board.push_san("Bg5+")
+# Make a move
+board.push_san("e4")
 
+# Call the method and send do Clipboard
 pyperclip.copy(getChatGPTText(board))
 
 
