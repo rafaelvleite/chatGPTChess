@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-import chess
-import pyperclip
+import chess     # pip install chess
+import pyperclip # pip install pyperclip
 
 # Method to pass the board and get moves played and legal moves to pass to chatGPT
 def getChatGPTText(board):
